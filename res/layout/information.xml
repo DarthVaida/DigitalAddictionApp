@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:id="@+id/informationLayout" android:background="#ff2a2a2a">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What does this app do?"
+            android:id="@+id/textView7" android:textSize="25dp" android:layout_marginTop="20dp"
+            android:textColor="#ff028e51" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This app is designed to help people tackle digital addiction, by discouraging the obsessive use of social media (i.e. Facebook). As you spend more and more time on Facebook, you will start receiving pop-up messages suggesting to take a break."
+            android:id="@+id/textView8" android:textColor="#ffffffff" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="How does it work?" android:id="@+id/textView9" android:textSize="25dp"
+              android:layout_marginTop="10dp" android:textColor="#ff028e51" android:textStyle="bold"
+              android:layout_marginLeft="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="From the moment you install it, the app will continuously monitor the amount of time you spend on Facebook daily and will plot a graph to observe your progress in time. There is also a parallel monitoring algorithm that randomly checks if you are online and learns about your usage patterns. Clicking on the Random button will display the differences between the two monitoring approaches and in time, you should observe the two to provide similar data."
+              android:id="@+id/textView10" android:textColor="#ffffffff" android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Am I an addict?"
+              android:id="@+id/textView11" android:textSize="25dp" android:layout_marginTop="10dp"
+              android:textColor="#ff028e51" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/textView12"
+              android:text="Nobody is in a position to determine that. This app provides an objective view by allowing you to compare yourself to the mass of other users, but it is up to you if you wish to adapt to the trend or not. It connects to a server once a day and acquires anonymous information about other users of this app. Clicking on the Average button will display the difference between your usage pattern on Facebook and the majority of people over time."
+              android:textColor="#ffffffff" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+</LinearLayout>

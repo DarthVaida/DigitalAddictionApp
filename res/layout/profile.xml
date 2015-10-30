@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ProgressWheel="http://schemas.android.com/apk/res/com.example.TaskMonitor"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#ff2a2a2a">
+    <com.ProgressWheel.ProgressWheel
+            android:id="@+id/pw_spinner"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            ProgressWheel:text="Your score"
+            ProgressWheel:textColor="#ffffffff"
+            ProgressWheel:textSize="14sp"
+            ProgressWheel:rimColor="#ff026C2E"
+            ProgressWheel:barLength="60dp"
+            ProgressWheel:barColor="#ff028e51"
+            ProgressWheel:barWidth="5dp"
+            ProgressWheel:rimWidth="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/textView13" android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Profile"
+            android:id="@+id/textView13"
+            android:textColor="#ffffffff" android:textSize="40sp"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time spent on Facebook today:"
+            android:id="@+id/textView14"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/pw_spinner" android:layout_toStartOf="@+id/textView13"
+            android:textColor="#ffffffff" android:layout_marginTop="20dp" android:layout_marginBottom="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:12:01"
+            android:id="@+id/continuousText"
+            android:layout_alignTop="@+id/textView14" android:layout_toEndOf="@+id/pw_spinner"
+            android:textColor="#ffffffff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Average across all users:"
+              android:id="@+id/textView16" android:layout_marginLeft="10dp"
+              android:layout_below="@+id/textView14" android:layout_alignEnd="@+id/textView14"
+              android:textColor="#ffffffff" android:layout_marginBottom="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Total time spent on Facebook:"
+              android:id="@+id/textView17" android:layout_marginLeft="10dp"
+              android:layout_below="@+id/textView16" android:layout_alignEnd="@+id/textView16"
+              android:textColor="#ffffffff" android:layout_marginBottom="10dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="1:12:01"
+              android:id="@+id/averageText"
+              android:textColor="#ffffffff"
+              android:layout_alignTop="@+id/textView16" android:layout_alignStart="@+id/continuousText"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="1:12:01"
+              android:id="@+id/totalText" android:textColor="#ffffffff"
+              android:layout_alignTop="@+id/textView17" android:layout_alignStart="@+id/averageText"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Next check scheduled at:" android:id="@+id/textView20" android:layout_marginLeft="10dp"
+              android:textColor="#ffffffff"
+              android:layout_below="@+id/textView17" android:layout_alignEnd="@+id/textView17"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:12:01"
+              android:id="@+id/alarmText" android:textColor="#ffffffff"
+              android:layout_below="@+id/textView17" android:layout_alignStart="@+id/totalText"/>
+</RelativeLayout>
